@@ -2,10 +2,16 @@
 #    uv pip compile pyproject.toml -o requirements.txt
 anyio==4.8.0
     # via httpx
+blinker==1.9.0
+    # via flask
 certifi==2025.1.31
     # via
     #   httpcore
     #   httpx
+click==8.1.8
+    # via flask
+flask==3.1.0
+    # via woitelegram-bot (pyproject.toml)
 h11==0.14.0
     # via httpcore
 httpcore==1.0.7
@@ -16,6 +22,14 @@ idna==3.10
     # via
     #   anyio
     #   httpx
+itsdangerous==2.2.0
+    # via flask
+jinja2==3.1.6
+    # via flask
+markupsafe==3.0.2
+    # via
+    #   jinja2
+    #   werkzeug
 python-telegram-bot==21.11.1
     # via woitelegram-bot (pyproject.toml)
 sniffio==1.3.1
@@ -24,3 +38,5 @@ tornado==6.4.2
     # via python-telegram-bot
 typing-extensions==4.12.2
     # via anyio
+werkzeug==3.1.3
+    # via flask
